@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Date -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_date_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:gravity="center"
+            android:textColor="#888888"
+            />
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2024-03-20"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Shots Taken/Made -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_shots_made_taken_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shots Made/Taken"
+            android:gravity="center_horizontal"
+            android:textColor="#888888"
+            />
+
+        <TextView
+            android:id="@+id/text_view_shots_made_taken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10/20"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+    <!-- Percentage -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_percentage_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Percentage"
+            android:gravity="center_horizontal"
+            android:textColor="#888888"
+            />
+
+        <TextView
+            android:id="@+id/text_view_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
